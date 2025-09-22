@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bylisful Baking And Cuisine Order Form</title>
+</head>
+<body>
+
+    <h1>Place Your Order</h1>
+
+    <form action=" " method="post">
+
+        <h2>Contact Information</h2>
+        <div>
+            <label for="name">Full Name:</label> <br>
+            <input type="text" id="name" name="customer_name" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="customer_email" >
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label> <br>
+            <input type="tel"  name="customer_phone">
+        </div>
+
+        <hr>
+
+        <h2>Order Details</h2>
+
+        <p>Select your baked goods and quantity:</p>
+
+        <div>
+            <h2>Appetizers</h2>
+            <label for="Meat-pie">Meat-pie</label>
+            <input type="number" name="meat_pie_quantity" min="0" value="0">
+
+             <label for="samosa">Samosa</label>
+            <input type="number" name="samosa_quantity" min="0" value="0">
+
+             <label for="puff">Puff</label>
+            <input type="number" name="puff_quantity" min="0" value="0">
+        </div>
+        
+        <div>
+            <h2>Main Dishes</h2>
+            <label for="jollof_rice">Jollof Rice</label>
+            <input type="number" name="jollof_rice_quantity" min="0" value="0">
+
+             <label for="fried_rice">Fried Rice</label>
+            <input type="number" name="fried_rice_quantity" min="0" value="0">
+
+             <label for="spaghetti">Spaghetti Bolognese</label>
+            <input type="number" name="spaghetti_quantity" min="0" value="0">
+        </div>
+
+        <div>
+            <h2>Beverages</h2>
+            <label for="fresh_juice">Fresh Juice</label>
+            <input type="number" name="fresh_juice_quantity" min="0" value="0">
+
+             <label for="smoothie">Smoothie</label>
+            <input type="number" name="smoothie_quantity" min="0" value="0">
+
+             <label for="coffee">Coffee</label>
+            <input type="number" name="coffee_quantity" min="0" value="0">
+        </div>
+
+
+        <div>
+            <label for="instructions">Special Instructions:</label>
+            <br>
+            <textarea id="instructions" name="special_instructions" rows="4" cols="50"></textarea>
+        </div>
+
+        <hr>
+
+        <h2>Delivery or Pickup</h2>
+
+        <div>
+            <input type="radio" id="pickup" name="delivery_option" value="pickup" required>
+            <label for="pickup">Pickup</label>
+        </div>
+
+        <div>
+            <input type="radio" id="delivery" name="delivery_option" value="delivery">
+            <label for="delivery">Delivery (additional fees may apply)</label>
+        </div>
+
+        <div>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="preferred_date" required>
+        </div>
+
+        <hr>
+        
+        <button type="submit">Submit Order</button>
+
+    </form>
+
+</body>
+</html>
+    <nav>
+        <a href="index.html">Homepage</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</body>
+</html>
